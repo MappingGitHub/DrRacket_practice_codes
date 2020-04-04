@@ -1,0 +1,18 @@
+;Defining and Applying Functions.
+;define is the KEYWORD
+;In the followig example timesfive is our function name
+;num is our argument
+; * 5 num is the result of the function
+(define (timesfive num)(* 5 num))
+(define (plusTwo num)(+ 2 num))
+(timesfive 10)
+(timesfive 12)
+(plusTwo 8)
+
+;produce shapes using functions
+(define (pink_circle s) (circle s "solid" "pink"))
+(pink_circle 4)
+(pink_circle 8)
+(pink_circle 12)
+(pink_circle 16)
+(pink_circle 20)
