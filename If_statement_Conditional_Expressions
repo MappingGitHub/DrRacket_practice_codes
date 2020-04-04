@@ -1,0 +1,13 @@
+;Conditional Expressions(if statement)
+;The following program for rejection for income or ...
+;given an income amount in US  dollar, return a rejection message(string type)
+;Each clause has two parts, the Test part and the Result part
+
+(define (income Customer_Gross_Pay )
+(cond[ ( <= Customer_Gross_Pay 53000 )"Sorry, you are not eligible  for this credit card" ]
+     [ ( >= Customer_Gross_Pay 75000 ) "Congratulation,Thank You For Choosing Us!" ]
+     [ ( = Customer_Gross_Pay 70000 ) "Thanks, We need more time for your application!"]
+      ))
+(check-expect (income  53000) "Sorry, you are not eligible  for this credit card")
+(check-expect (income  75000) "Congratulation,Thank You For Choosing Us!")
+(check-expect (income  70000) "Thanks, We need more time for your application!")
