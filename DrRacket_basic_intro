@@ -1,0 +1,26 @@
+;Files saved as "Definition" and the files saved as '.rkt'
+;DrRacket is case sensitive
+
+;Numbers and Arithmetic Sample Definition
+;operators like +-*/ always comes first
+
+48/2
+(+ 9 21)
+(* 5 12)
+(/(* 5 13)2)
+(*(- 11 4)5)
+
+
+;Evaluates the least common multiple of two integers(exact or inexact)
+(lcm 9 18)
+
+;Evaluates the integer (exact or inexact) square root of a number
+(integer-sqrt 49 )
+
+;Showing an element with type of STRING
+ "Burger" "Sea"  "Soil" "###########################"
+
+;The following command takes separate strings and makes one combined single string element
+(string-append  "Burger" "Sea"  "Soil")
+
+(string-length (string-append  "Burger" "Sea"  "Soil"))
