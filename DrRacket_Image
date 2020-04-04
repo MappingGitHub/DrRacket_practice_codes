@@ -1,0 +1,25 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname DrRacket_Image) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
+;How to add images 
+;From main menu choose 'Language' and then choose Teachpack
+;then from Preinstalled 2htdp\image.rkt
+;After adding '2htdp\image.rkt' you will see a yellow bar at the bottom
+;After running the program you will see that yellow bar will disapear
+;Teachpacks makes new functions available to us
+;For example:
+
+;(circle 50 "solid" "green")
+;(triangle 60 "solid" "red")
+
+(circle 20 "solid" "darkmagenta")
+(triangle 30 "outline" "red")
+
+
+;We can use 'overlay' operator to overlay those shapes
+
+(overlay(isosceles-triangle 60 45 "solid" "red")
+(circle 50 "solid" "orange")(square 100 "solid" "blue"))
+(rectangle 60 80 "solid" (make-color 1 2 1 50))
+
+
