@@ -1,0 +1,23 @@
+;There are three ways to put comment in DrRacket codes
+;first one is using a single semicolon in the begining of line
+;Second method is using one of square and semicolon before the keyword of define to stop execution after that point.
+
+
+#|
+Third method is using two symbol "#"  and two  vertical bars ( | ) 
+
+|#
+
+
+;Following program accepts name and say greetings
+;Name_of_the_function : string(the type of argument that the function accept) ->string(the type of argument that the function produce)
+;given a name to say Hello, weclome to , for producing a greeting
+;(check-expect(function name argument) check that the function works correctly
+;"The test passed!" will be the message 
+
+;Welcome: string ->string
+
+(define (Welcome GuestName)
+  (string-append "Hello " GuestName",we are happy to see you in our city."))
+  
+(check-expect(Welcome "Tarzan")"Hello Tarzan,we are happy to see you in our city.")
