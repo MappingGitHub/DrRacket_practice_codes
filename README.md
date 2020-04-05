@@ -9,6 +9,9 @@ https://racket-lang.org/
 
 https://docs.racket-lang.org/
 
+For Implementing Higher-Order Functions(berkeley.edu)
+https://people.eecs.berkeley.edu/~bh/ssch19/implement-hof.html
+
 
 ###########################################################################################
 What is .bak extension file?
