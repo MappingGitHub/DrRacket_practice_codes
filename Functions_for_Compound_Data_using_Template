@@ -1,0 +1,31 @@
+;Functions for Compound Data with using Template
+;First Step: Defining Compound Data
+;Compound Data is a value that contains other values
+;The main concept in compound data is that there is a AND
+;For example for a point we need X and Y
+;We need a name for the data definition
+;We also need the type of things that go to the data definition and the names of fileds
+
+(define-struct cars (model year))
+(make-cars "Toyota" 2019)
+(make-cars "BMW" 2017)
+(make-cars "Ford" 1964)
+
+;Second step: Defining function
+;A function to show Smog Test based on the manufacturing year with 2005
+;This is a Template sample-->  (cars-model vehicle)
+;This is a Template sample-->    (cars-year vehicle)
+
+(define( Passing_smog_test vehicle approved_year)
+  (>(cars-year vehicle)approved_year))
+;We compare the manufacturing year of each car with year 2005
+
+(check-expect (Passing_smog_test (make-cars "Toyota" 2019)
+                                 2005)
+              true)
+(check-expect (Passing_smog_test (make-cars "BMW" 2017)
+                                 2005)
+              true)
+(check-expect (Passing_smog_test (make-cars "Ford" 1964)
+                                 2005)
+              false)
