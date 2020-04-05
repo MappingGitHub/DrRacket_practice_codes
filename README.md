@@ -6,8 +6,14 @@ Racket is a general-purpose, multi-paradigm programming language based on the Sc
 
 https://racket-lang.org/
 
-
 https://docs.racket-lang.org/
+
+
+Good Option in DrRacket for Automatic Parentheses and Square Brackets in DrRacket
+Main menu-->Editing--->Preferences-->Enable automatic parenthesis,square brackets,and quotes
+
+
+##########################################################################################
 
 For Implementing Higher-Order Functions(berkeley.edu)
 https://people.eecs.berkeley.edu/~bh/ssch19/implement-hof.html
