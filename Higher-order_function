@@ -1,1 +1,12 @@
-;Higher-order function
+;Higher-order_function_Lambda
+;We need to select "Intermediate Student with Lambda" option from Main menu---> Language
+
+(define (my-filter pred lst)
+  (cond ((null? lst) null)
+        ((pred (first lst))
+         (cons (first lst) (my-filter pred (rest lst))))
+        (else (my-filter pred (rest lst)))))
+        
+(my-filter
+ (lambda (x) (< x 12))
+ (list 4 11 66 81 43 25 0 7))
