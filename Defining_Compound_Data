@@ -1,0 +1,13 @@
+;Defining Compound Data
+;Compound Data is a value that contains other values
+;The main concept in compound data is that there is a AND
+;For example for a point we need X and Y
+;We need a name for the data definition
+;We also need the type of things that go to the data definition and the names of fileds
+
+
+(define-struct cars (model year))
+
+(make-cars "Toyota" 2019)
+(make-cars "BMW" 2017)
+(make-cars "Ford" 1964) 
